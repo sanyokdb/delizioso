@@ -14,7 +14,7 @@ $("#clientsSays").slick({
   fade: true,
   arrows: false,
   cssEase: 'linear',
-  // autoplay: true,
+  autoplay: true,
   autoplaySpeed: 3000,
   asNavFor: '#clientsThumbs'
 });
@@ -24,26 +24,10 @@ $("#clientsThumbs").slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   arrows: false,
-  // autoplay: true,
+  autoplay: true,
   autoplaySpeed: 3000,
   asNavFor: '#clientsSays',
   centerMode: true,
   focusOnSelect: true
 });
-// const clientsSays = new Swiper('#clientsSays', {
-//   loop: true,
-//   effect: "fade",
-//   fadeEffect: {
-//     crossFade: true
-//   },
-//   autoplay: {
-//     delay: 4500,
-//   },
-// });
 
-// const clientsThumbs = new Swiper('#clientsThumbs', {
-//   loop: true,
-//   slidesPerView: 7,
-//   spaceBetween: 20,
-//   centeredSlides: true,
-// });
