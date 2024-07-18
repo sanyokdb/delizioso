@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ресторан Delizioso</title>
+  <link href="./libs/slick/slick.css" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo header__logo" href="#!">
+        <img class="logo__img" src="./img/logo.svg" width="132" height="51" alt="Ресторан Delizioso">
+      </a>
+      <nav class="nav" id="nav">
+        <a class="nav__link nav__link--active" href="#!">Home</a>
+        <a class="nav__link" href="#!">Menu</a>
+        <a class="nav__link" href="#!">About us</a>
+        <a class="nav__link" href="#!">Order online</a>
+        <a class="nav__link" href="#!">Reservation</a>
+        <a class="nav__link" href="#!">Contact us</a>
+      </nav>
+      <div class="header__btns">
+        <a class="header__btn-cart" href="#!">
+          <img src="./img/icon-cart.svg" alt="Cart">
+          <span>3</span>
+        </a>
+        <button class="btn-reset btn btn--sm btn--secondary header__btn-login" aria-label="Login">Log in</button>
+        <button class="btn-reset header__btn-burger" id="burger" aria-label="Burger">
+          <img src="./img/icon-burger.svg" alt="Burger menu">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="hero__label">Restauran</span>
+          <h1 class="hero__title">Italian Cuisine</h1>
+          <p class="hero__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales senectus dictum arcu sit tristique donec eget.</p>
+          <div class="hero__btns">
+            <a class="btn btn--primary" href="#!">Order now</a>
+            <button class="btn-reset btn btn--secondary">Reservation</button>
+          </div>
+        </div>
+        <img class="hero__img" src="./img/hero-img.png" alt="">
+      </div>
+    </section>
+
+    <section class="welcome">
+      <div class="container welcome__container">
+        <img class="welcome__img" src="./img/welcome-img.png" loading="lazy" width="816" height="816" alt="Welcome">
+        <div class="welcome__content">
+          <h2 class="welcome__title">Welcome to <span>delizioso</span></h2>
+          <p class="welcome__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
+          <a class="btn-reset btn btn--primary" href="#!">See our menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu">
+      <div class="container">
+        <h2 class="menu__title">Our popular menu</h2>
+        <div class="menu-tabs">
+          <a class="menu-tabs__link menu-tabs__link--active" href="#!">All catagory</a>
+          <a class="menu-tabs__link" href="#!">Dinner</a>
+          <a class="menu-tabs__link" href="#!">Lunch</a>
+          <a class="menu-tabs__link" href="#!">Dessert</a>
+          <a class="menu-tabs__link" href="#!">Drink</a>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <article class="menu-thumb">
+              <div class="menu-thumb__image">
+                <img class="menu-thumb__img" src="./img/menu/1.png" loading="lazy" width="270" height="270" alt="Spaghetti">
+              </div>
+              <div class="menu-thumb__content">
+                <h4 class="menu-thumb__name">Spaghetti</h4>
+                <div class="menu-thumb__raiting">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star-emty.svg" alt="star">
+                </div>
+                <p class="menu-thumb__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                <div class="menu-thumb__price-btn">
+                  <a class="btn btn-md btn--primary menu-thumb__btn" href="#!">Order now</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="menu-list__item">
+            <article class="menu-thumb">
+              <div class="menu-thumb__image">
+                <img class="menu-thumb__img" src="./img/menu/2.png" loading="lazy" width="270" height="270" alt="Gnocchi">
+              </div>
+              <div class="menu-thumb__content">
+                <h4 class="menu-thumb__name">Gnocchi</h4>
+                <div class="menu-thumb__raiting">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star-emty.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star-emty.svg" alt="star">
+                </div>
+                <p class="menu-thumb__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                <div class="menu-thumb__price-btn">
+                  <div class="menu-thumb__prices">
+                    <span class="menu-thumb__price menu-thumb__price--discount">$13.50</span>
+                    <span class="menu-thumb__price">$12.05</span>
+                  </div>
+                  <a class="btn btn-md btn--primary menu-thumb__btn" href="#!">Order now</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="menu-list__item">
+            <article class="menu-thumb">
+              <div class="menu-thumb__image">
+                <img class="menu-thumb__img" src="./img/menu/3.png" loading="lazy" width="270" height="270" alt="Rovioli">
+              </div>
+              <div class="menu-thumb__content">
+                <h4 class="menu-thumb__name">Rovioli</h4>
+                <div class="menu-thumb__raiting">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                </div>
+                <p class="menu-thumb__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                <div class="menu-thumb__price-btn">
+                  <div class="menu-thumb__prices">
+                    <span class="menu-thumb__price">$12.05</span>
+                  </div>
+                  <a class="btn btn-md btn--primary menu-thumb__btn" href="#!">Order now</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="menu-list__item">
+            <article class="menu-thumb">
+              <div class="menu-thumb__image">
+                <img class="menu-thumb__img" src="./img/menu/4.png" loading="lazy" width="270" height="270" alt="Penne Alla Vodak">
+              </div>
+              <div class="menu-thumb__content">
+                <h4 class="menu-thumb__name">Penne Alla Vodak</h4>
+                <div class="menu-thumb__raiting">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                </div>
+                <p class="menu-thumb__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                <div class="menu-thumb__price-btn">
+                  <div class="menu-thumb__prices">
+                    <span class="menu-thumb__price">$12.05</span>
+                  </div>
+                  <a class="btn btn-md btn--primary menu-thumb__btn" href="#!">Order now</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="menu-list__item">
+            <article class="menu-thumb">
+              <div class="menu-thumb__image">
+                <img class="menu-thumb__img" src="./img/menu/5.png" loading="lazy" width="270" height="270" alt="Risoto">
+              </div>
+              <div class="menu-thumb__content">
+                <h4 class="menu-thumb__name">Risoto</h4>
+                <div class="menu-thumb__raiting">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                </div>
+                <p class="menu-thumb__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                <div class="menu-thumb__price-btn">
+                  <div class="menu-thumb__prices">
+                    <span class="menu-thumb__price">$12.05</span>
+                  </div>
+                  <a class="btn btn-md btn--primary menu-thumb__btn" href="#!">Order now</a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="menu-list__item">
+            <article class="menu-thumb">
+              <div class="menu-thumb__image">
+                <img class="menu-thumb__img" src="./img/menu/6.png" loading="lazy" width="270" height="270" alt="Splitza Signature">
+              </div>
+              <div class="menu-thumb__content">
+                <h4 class="menu-thumb__name">Splitza Signature</h4>
+                <div class="menu-thumb__raiting">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                  <img class="menu-thumb__raiting-star" src="./img/icon-star.svg" alt="star">
+                </div>
+                <p class="menu-thumb__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                <div class="menu-thumb__price-btn">
+                  <div class="menu-thumb__prices">
+                    <span class="menu-thumb__price">$12.05</span>
+                  </div>
+                  <a class="btn btn-md btn--primary menu-thumb__btn" href="#!">Order now</a>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <ul class="pagination menu__pagination">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--prev" href="#!">
+              <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.7931 1.46287L1.8019 12.4541L12.7931 23.4453" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </a>
+          </li>
+          <li class="pagination__item"><a class="pagination__link" href="#!">1</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#!">2</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#!">31</a></li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--dot" href="#!">
+              <svg width="24" height="6" viewBox="0 0 24 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3.32864" cy="3.4541" r="2.5" fill="#B7A28B" />
+                <circle cx="12.0001" cy="3.4541" r="2.5" fill="#B7A28B" />
+                <circle cx="20.6715" cy="3.4541" r="2.5" fill="#B7A28B" />
+              </svg>
+            </a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--next" href="#!">
+              <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.20692 1.46287L12.1981 12.4541L1.20692 23.4453" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reserve">
+      <div class="container reserve__container">
+        <img class="reserve__img" src="./img/reserve-img.png" loading="lazy" width="882" height="904" alt="Reserve">
+        <div class="reserve__content">
+          <h2 class="reserve__title">Let's reserve <span>a table</span></h2>
+          <p class="reserve__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
+          <button class="btn-reset btn btn--primary">Reservation</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="chef">
+      <div class="container">
+        <h2 class="chef__title">Our greatest chef</h2>
+        <div class="chef__list">
+          <div class="chef-thumb">
+            <img class="chef-thumb__img" src="./img/chefs/1.jpg" alt="Betran Komar">
+            <h5 class="chef-thumb__name">Betran Komar</h5>
+            <p class="chef-thumb__role">Head chef</p>
+          </div>
+          <div class="chef-thumb">
+            <img class="chef-thumb__img" src="./img/chefs/2.jpg" alt="Ferry Sauwi">
+            <h5 class="chef-thumb__name">Ferry Sauwi</h5>
+            <p class="chef-thumb__role">Chef</p>
+          </div>
+          <div class="chef-thumb">
+            <img class="chef-thumb__img" src="./img/chefs/3.jpg" alt="Iswan Dracho">
+            <h5 class="chef-thumb__name">Iswan Dracho</h5>
+            <p class="chef-thumb__role">Chef</p>
+          </div>
+        </div>
+        <div class="chef__btn">
+          <a class="btn-reset btn btn--primary" href="#!">View all</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="clients__bg">
+        <div class="container">
+          <h2 class="clients__title">Our customers say</h2>
+
+          <div class="clients__inner">
+            <!-- clients says -->
+            <div class="clients__says" id="clientsSays">
+              <div class="clients__say-slide">
+                <div class="clients__say">
+                  <img class="clients__say-img" src="./img/say/img-1.png" width="" alt="Say">
+                  <h3 class="clients__say-name">Starla Virgoun</h3>
+                  <h5 class="clients__say-role">Dynamic Metrics</h5>
+                  <div class="clients__say-content">
+                    <p class="clients__say-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clients__say-slide">
+                <div class="clients__say">
+                  <img class="clients__say-img" src="./img/say/img-2.png" alt="Say">
+                  <h3 class="clients__say-name">Tomas Williamson</h3>
+                  <h5 class="clients__say-role">District Optimization Architect</h5>
+                  <div class="clients__say-content">
+                    <p class="clients__say-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clients__say-slide">
+                <div class="clients__say">
+                  <img class="clients__say-img" src="./img/say/img-3.png" alt="Say">
+                  <h3 class="clients__say-name">Moses Beer</h3>
+                  <h5 class="clients__say-role">Product Usability Consultant</h5>
+                  <div class="clients__say-content">
+                    <p class="clients__say-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clients__say-slide">
+                <div class="clients__say">
+                  <img class="clients__say-img" src="./img/say/img-4.png" alt="Say">
+                  <h3 class="clients__say-name">Julio Bartell</h3>
+                  <h5 class="clients__say-role">National Analyst</h5>
+                  <div class="clients__say-content">
+                    <p class="clients__say-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clients__say-slide">
+                <div class="clients__say">
+                  <img class="clients__say-img" src="./img/say/img-5.png" alt="Say">
+                  <h3 class="clients__say-name">Marvin Ebert</h3>
+                  <h5 class="clients__say-role">Forward Operations</h5>
+                  <div class="clients__say-content">
+                    <p class="clients__say-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clients__say-slide">
+                <div class="clients__say">
+                  <img class="clients__say-img" src="./img/say/img-6.png" alt="Say">
+                  <h3 class="clients__say-name">Jeffrey Cremin</h3>
+                  <h5 class="clients__say-role">Corporate Mobility</h5>
+                  <div class="clients__say-content">
+                    <p class="clients__say-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clients__say-slide">
+                <div class="clients__say">
+                  <img class="clients__say-img" src="./img/say/img-7.png" alt="Say">
+                  <h3 class="clients__say-name">Eloise Beahan</h3>
+                  <h5 class="clients__say-role">Corporate Consultant</h5>
+                  <div class="clients__say-content">
+                    <p class="clients__say-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis ultricies at eleifend proin. Congue nibh nulla malesuada ultricies nec quam</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- clients thumbs -->
+            <div class="clients__thumb" id="clientsThumbs">
+              <div class="clients__thumb-slide">
+                <div class="clients__thumb-item"><img class="clients__thumb-img" src="./img/say/img-1.png" alt="img"></div>
+              </div>
+              <div class="clients__thumb-slide">
+                <div class="clients__thumb-item"><img class="clients__thumb-img" src="./img/say/img-2.png" alt="img"></div>
+              </div>
+              <div class="clients__thumb-slide">
+                <div class="clients__thumb-item"><img class="clients__thumb-img" src="./img/say/img-3.png" alt="img"></div>
+              </div>
+              <div class="clients__thumb-slide">
+                <div class="clients__thumb-item"><img class="clients__thumb-img" src="./img/say/img-4.png" alt="img"></div>
+              </div>
+              <div class="clients__thumb-slide">
+                <div class="clients__thumb-item"><img class="clients__thumb-img" src="./img/say/img-5.png" alt="img"></div>
+              </div>
+              <div class="clients__thumb-slide">
+                <div class="clients__thumb-item"><img class="clients__thumb-img" src="./img/say/img-6.png" alt="img"></div>
+              </div>
+              <div class="clients__thumb-slide">
+                <div class="clients__thumb-item"><img class="clients__thumb-img" src="./img/say/img-7.png" alt="img"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="./libs/slick/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+</html>
